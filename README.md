@@ -28,8 +28,8 @@ cd Resume_industry
 ```
 
 ### 2. Edit the Template
-	•	Open resume.tex in any LaTeX editor (e.g., Overleaf, Texmaker, VS Code with LaTeX Workshop).
-	•	Modify the sections under sections/ to reflect your own details.
+- Open resume.tex in any LaTeX editor (e.g., Overleaf, Texmaker, VS Code with LaTeX Workshop).
+- Modify the sections under sections/ to reflect your own details.
 
 ### 3. Compile the Resume
 - Use a LaTeX distribution such as pdflatex or an online editor like Overleaf.
