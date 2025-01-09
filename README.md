@@ -1,6 +1,4 @@
-Here’s a professional and detailed README file for your repository:
-
-Resume (Industry Version)
+# Resume (Industry Version)
 
 This repository contains a professional resume template tailored for industry roles. The focus is on presenting technical skills, experience, and accomplishments in a clean and concise format, optimized for professionals transitioning from academia to industry or those applying for roles in engineering, research, and related fields.
 
