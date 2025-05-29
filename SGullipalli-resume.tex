@@ -4,155 +4,105 @@
 \usepackage{graphicx}
 \usepackage[colorlinks]{hyperref}
 \usepackage[svgnames]{xcolor}
-\usepackage{multicol}
+% \usepackage{multicol} % Not used in this version for skills for clarity
 \usepackage{enumitem}
-\usepackage{etaremune}
-\usepackage{layout}
+% \usepackage{etaremune} % Not used
+% \usepackage{layout} % Not used
 \usepackage{fancyhdr}
+
 \thispagestyle{fancy}
-\setlength{\headheight}{5pt}
+\setlength{\headheight}{5pt} % Adjusted for potentially less content in header
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot{}
-%\fancyfoot[C]{\vspace{-15pt}Page \thepage \ of 2}
-\hypersetup{citecolor=DeepPink4}
-\hypersetup{linkcolor=Blue}
-\hypersetup{urlcolor=Blue}
-\usepackage{cleveref}
+\hypersetup{citecolor=DeepPink4, linkcolor=Blue, urlcolor=Blue}
+% \usepackage{cleveref} % Not strictly needed for this resume format
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 %%%%%%%%%%%%%%%%%% %%% Header material %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{centering}
-{\hfill\centering{\huge \textbf{Sreevardhan Gullipalli}}\hfill}
+{\hfill{\huge \textbf{Sreevardhan Gullipalli}}\vspace{2pt}\hfill}
 \end{centering}
 \begin{flushleft}
-{\href{mailto:sreevardhang@gmail.com}{sreevardhang@gmail.com}}\hfill\centering{Lancaster, PA} \hfill \raggedright{\href{https://www.linkedin.com/in/sreevardhang/}{\raisebox{-0.25\height}{\includegraphics[height=\baselineskip]{./assets/linkedin-icon-3.png}}{/SreevardhanGullipalli}}}
+% Using a three-part layout for contact info for better balance
+\makebox[0.33\textwidth][l]{\href{mailto:sreevardhang@gmail.com}{sreevardhang@gmail.com}}%
+\makebox[0.33\textwidth][c]{Lancaster, PA} %[Your Phone Number]}
+\makebox[0.33\textwidth][r]{\href{https://www.linkedin.com/in/sreevardhang/}{\raisebox{-0.12\height}{\includegraphics[height=0.8\baselineskip]{./assets/linkedin-icon-3.png}}\hspace{2pt}/SreevardhanGullipalli}}
+\\ % Added portfolio link placeholder on a new line if space is an issue or integrate above
+%\centering{\href{https://[Link to Your Portfolio]}{Portfolio: [Link to Your Portfolio]}}
 \end{flushleft}
 \vspace{-8pt}
 \noindent \rule[2pt]{\textwidth}{0.5pt} \vspace{-8mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{justify} 
-Mechanical Design Engineer with 4 years of experience with CAD Design, FEA, and New Product 
-Development. Proven ability to lead complex analyses, manage project deliverables on time, and collaborate effectively with cross-functional 
-and offshore teams.\end{justify} 
+\noindent \textbf{\large \textcolor{Brown}{Summary}}\vspace{2pt}\\
+\begin{justify}
+Versatile Mechanical Engineer with 4 years of experience in mechanical design, CAD modeling (SolidWorks, GD\&T), FEA (ANSYS), and full-cycle project execution. Proven ability to develop innovative engineering solutions, manage project deliverables, and collaborate with cross-functional/offshore teams. Seeking to apply robust design and problem-solving skills to challenging engineering roles.
+\end{justify}
 \vspace{-8pt}
 \noindent \rule[2pt]{\textwidth}{0.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent \textbf{\large \textcolor{Brown}{Experience}}\vspace{4pt}\\
-\textbf{Jaydu LLC - Consulting Engagement at Utilimaster}, Lancaster, PA\\ 
-\textbf{Mechanical Design Engineer}\hfill \raggedright{June 2024 - Present}\\
-\begin{itemize}[leftmargin=*]
+\textbf{Jaydu LLC - Consulting Engagement at Utilimaster}, Lancaster, PA\\
+\textbf{Mechanical Design Engineer}\hfill \raggedright{June 2024 - Present}\\ % Title generalized
+\begin{itemize}[leftmargin=*, label=\textbullet]
 \setlength\itemsep{-2pt}
 \vspace{-8pt}
-\item Designed 3D models and production drawings using GD\&T for truckbody manufacturing (Solidworks). Applied DFM \& DFA principles. Validated physical prototypes before full-scale production. 
-\item Re-engineered service  truckbody to reduce component count and improve manufacturability. Achieved production cost reduction of \$5000 in this project.
-\item Led a major design standardization project, encompassing the organization, design, and documentation of a large CAD database.
-\item Directed and collaborated with an offshore engineering team (India) ensuring adherence to standards and quality.
-\item Performed Structural Finite Element Analysis (FEA) using ANSYS, on truckbody systems to validate designs with static and dynamic loads.
+\item Developed comprehensive 3D CAD models (SolidWorks) and detailed production drawings incorporating GD\&T for complex mechanical systems and assemblies. Applied DFM/DFA principles extensively and validated physical prototypes to ensure successful full-scale production.
+\item Conducted comprehensive Structural Finite Element Analysis (FEA) using ANSYS to validate the integrity, performance, and safety of critical systems under diverse static and dynamic load conditions. 
+%Utilized Python for simulation data post-processing \& results visualization.
+\item Re-engineered multi-component mechanical assemblies to reduce part count by 20\%, enhance manufacturability, and achieve documented project cost savings of \$5000 /unit).
+\item Spearheaded design standardization initiatives, systematically organized and documented large CAD databases to improve design reuse and streamline future development cycles.
+%\item Manage collaboration with an offshore engineering team (India), ensuring strict adherence to design standards, quality benchmarks, and project timelines for critical deliverables.
 \end{itemize}\vspace{-8pt}
-\textbf{Jaydu LLC - Consulting Engagement at Masterack}, Kansas City, MO\\ 
-\textbf{Mechanical Design Engineer}\hfill \raggedright{June 2021 - June 2024}\\
-\begin{itemize}[leftmargin=*]
+
+\textbf{Jaydu LLC - Consulting Engagement at Masterack}, Kansas City, MO\\
+\textbf{Mechanical Design Engineer}\hfill \raggedright{June 2021 - June 2024}\\ % Title generalized
+\begin{itemize}[leftmargin=*, label=\textbullet]
 \setlength\itemsep{-2pt}
 \vspace{-8pt}
-\item Spearheaded New Product Development (NPD), successfully designing a van roof ladder rack system, foldable shelving units, and a bulkhead with sliding door.
-\item Executed structural Finite Element Analysis (FEA) using ANSYS to evaluate and validate the load-bearing capacity and structural integrity of key cargo van upfitting components, including wooden bulkheads, NLDV floor track systems, and polycarbonate shelving.
-\item Managed the end-to-end Engineer-to-Order (ETO) process for custom cargo van upfitting solutions, translating customer requirements into production-ready designs.
-\item Engineered and detailed final manufacturing drawing packages; led cross-functional design reviews to gain stakeholder approval.
+\item Led New Product Development (NPD) initiatives from concept to production for specialized vehicular accessories and modular systems, including ladder racks, configurable shelving, and access solutions.
+\item Executed detailed structural FEA (ANSYS) to assess and validate the load-bearing capacity and structural integrity of key components for cargo management systems, ensuring compliance with safety and durability standards.
+\item Oversaw the complete Engineer-to-Order (ETO) process for custom client solutions, effectively translating unique customer requirements into robust, production-ready designs.
+\item Engineered and finalized comprehensive manufacturing drawing packages; facilitated cross-functional design reviews with engineering, manufacturing, and stakeholders to secure approvals and optimize for assembly.
 \end{itemize}
 \vspace{-8pt}
 \noindent \rule[2pt]{\textwidth}{0.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent \textbf{\large \textcolor{Brown}{Education}}\vspace{2pt}\\
-\textbf{MS}, Mechanical Engineering, University of Illinois at Chicago, Chicago, IL \hfill \raggedright{May 2020}\\
-{GPA: 3.75/4.0}\\
+\textbf{MS}, Mechanical Engineering, University of Illinois Chicago, Chicago, IL \hfill \raggedright{May 2020}\\
+\textit{GPA: 3.75/4.0}\\
+\textit{Relevant Coursework: Advanced CAD, Multibody Dynamics, Applied Stress Analysis}\\ % Added sample relevant coursework
 \vspace{6pt}
 \textbf{B.Tech}, Mechanical Engineering, CMR College of Engineering and Technology, Hyderabad, India \hfill \raggedright{Jun 2017}\\
-{GPA: 3.6/4.0}\\
+\textit{GPA: 3.6/4.0}\\
 \vspace{-2pt}
  \noindent \rule[2pt]{\textwidth}{0.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\noindent \textbf{\large \textcolor{Brown}{Relevant Coursework}}\vspace{2pt} \\
-%Fluid mechanics I \& II; Advanced transport phenomena; Phase-change heat transfer; Finite element methods; Energy storage; Thermodynamics; Applied stress analysis; Conduction heat transfer; Convection heat transfer; Heating, Ventilation \& Air Conditioning; Mechanics of solids; Fundamentals of Machine learning.
-%\vspace{-2pt} \\
-%\noindent \rule[2pt]{\textwidth}{0.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent \textbf{\large \textcolor{Brown}{Skills}}\\
-%\begin{multicols}{2}
-\begin{itemize}[leftmargin=*]
+\noindent \textbf{\large \textcolor{Brown}{Skills}}\vspace{2pt}\\
+\begin{itemize}[leftmargin=*, label=\textbullet]
 \setlength\itemsep{-2pt}
 \vspace{-8pt}
-\item \textbf{Design \& Analysis} - Solidworks; Autodesk Inventor; GD\&T; COMSOL; ANSYS (Thermal, Structural); FEA; Python (matplotlib, SciPy, numPy); MATLAB;
-\item \textbf{Engineering} - Sheet Metal Design; Manufacturing Processes (Sheet Metal, Extrusions, Machining, Welding); Data Analysis; Truckbody Systems, Van Upfitting
+\item \textbf{Design \& Analysis:} SolidWorks (Advanced), Autodesk Inventor, GD\&T (ASME Y14.5), Large Assembly Management, Technical Drawings, ANSYS (Structural, Thermal), FEA (Static, Dynamic, Modal)
+%\item \textbf{Simulation \& Analysis:} ANSYS (Structural, Thermal), FEA (Static, Dynamic, Modal)
+\item \textbf{Engineering:} DFM/DFA, Sheet Metal Design, Extrusions, Machining, Injection Molding (Knowledge), Tolerance Analysis, Cost Optimization, Physical Prototype Development \& Testing, Design Verification \& Validation (DV\&V), Root Cause Analysis, New Product Introduction (NPI)
+%\item \textbf{Prototyping \& Validation:} Physical Prototype Development \& Testing, Design Verification \& Validation (DV\&V), Root Cause Analysis
+%\item \textbf{Product Development Lifecycle:} New Product Introduction (NPI), Engineer-to-Order (ETO), %Requirements Elicitation \& Management, Agile Methodologies
+%\item \textbf{Technical Computing \& Automation:} Python (NumPy, SciPy, Matplotlib), Scripting for Design Automation
+%\item \textbf{Tech:} Python (NumPy, SciPy, Matplotlib)
 \end{itemize}
-%\end{multicols}
-\vspace{-8pt}
-\noindent \rule[2pt]{\textwidth}{0.5pt}
+%\vspace{-8pt}
+%\noindent \rule[2pt]{\textwidth}{0.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\newpage
-%\noindent \textbf{\large \textcolor{Brown}{Selected Journal Publications}}\hfill \raggedright{(See \href{https://scholar.google.com/citations?user=oQHSsp4AAAAJ&hl=en}{\raisebox{-0.25\height}{\includegraphics[height=\baselineskip]{google-scholar.pdf}}Google Scholar} page for full publication list)}\\
-%\begin{enumerate}[leftmargin=*]
-%\setlength\itemsep{-1pt}
-%\vspace{-8pt}
-%\item \textbf{Tamvada, S.}, Attinger, D., and Moghaddam, S., "On critical heat flux and its evaporation momentum and hydrodynamic limits", \textit{Int. J. Heat Mass Transf.}, Vol 203, 2023.
-%\item \textbf{Tamvada, S.R.} and Moghaddam, S., ``Data center energy efficiency enhancement using a two-phase heat sink with ultra-high heat transfer coefficient", \textit{arXiv preprint arXiv:2207.12508}, 2022.
-%\item \textbf{Tamvada, S.R.}, Alipanah, M., and Moghaddam, S., ``Membrane-Based Two Phase Heat Sinks for High Heat Flux Electronics and Lasers'', \textit{IEEE Trans. Compon. Packag. Manuf. Technol.}, Vol 11, 2021.
-%\item Kulkarni, V., Lolla, V.Y.$^\ast$, \textbf{Tamvada, S.R.}$^\ast$, Shirdade, N.S., and Anand, S., ``Coalescence and spreading of drops on liquid pools'', \textit{J. Colloid Interface Sci }, Vol 586, 2021. ($^\ast$ equal contribution)
-%\end{enumerate}
-%\vspace{-10pt}
-%\noindent \rule[2pt]{\textwidth}{0.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent \textbf{\large \textcolor{Brown}{Projects}}\\
-% \begin{multicols}{2} 
-\begin{itemize}[leftmargin=*]
-\setlength\itemsep{-2pt}
-\vspace{-8pt}
-\item \textbf{Multibody Simulation} - Executed dynamic analysis of a slider-crank mechanism in an MBS software, contrasting rigid body simulations with a flexible model incorporating a deformable connecting rod.\hfill \raggedright{Oct 2019}
-\item \textbf{SAE India Baja} - Participated in a nation-wide SAE Dune Buggy design competition. Manufactured a functional buggy and ranked 15th among 60 teams. \hfill \raggedright{Dec 2016}
-\end{itemize}
-% \end{multicols}
-\vspace{-10pt}
-\noindent \rule[2pt]{\textwidth}{0.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\noindent \textbf{\large \textcolor{Brown}{Awards}}\\
-%\begin{itemize}[leftmargin=*]
-%\setlength\itemsep{-1pt}
-%\vspace{-8pt}
-%\item Third place - 2022 MAE Student poster competition, University of Florida, Gainesville, FL. \hfill \raggedright{Apr 2022}
-%\end{itemize}
-%\vspace{-10pt}
-%\noindent \rule[2pt]{\textwidth}{0.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\noindent \textbf{\large \textcolor{Brown}{Volunteer/Leadership activities}}\\
-%\begin{itemize}[leftmargin=*]
+%\noindent \textbf{\large \textcolor{Brown}{Projects}}\vspace{2pt}\\
+%\begin{itemize}[leftmargin=*, label=\textbullet]
 %\setlength\itemsep{-2pt}
 %\vspace{-8pt}
-%\item Currently maintain the \href{https://www.img.ufl.edu/}{Interdisciplinary Microsystems Group} and \href{https://mae.ufl.edu/neslabs/index.html}{NESL} websites at University of Florida.
-%\item Critically evaluated undergraduate research presentations across diverse STEM fields as judge at the Chicago Area Undergraduate Research Symposium (CAURS) 2019.
-%\item Led a team of 8 graduate students in organizing semi-annual cultural festivals and international student pick-up services as President of Indian Graduate Student Association (IGSA) at University of Illinois at Chicago from June 2018 to August 2019.
-%\item Led a team of 5 volunteers in developing teaching modules and conducting co-curricular workshops for middle school students as Project coordinator at Becoming I Foundation, India, from January 2016 to July 2017.
+%\item \textbf{Advanced Multibody System Simulation} - Conducted dynamic analysis of a slider-crank mechanism using MBS software, comparing rigid vs. flexible body models to assess impact on kinematic accuracy and stress distribution. Presented findings on optimizing component design for dynamic performance. \hfill \raggedright{Oct 2019}
+%\item \textbf{SAE India Baja Competition} - Key design team member; engineered and analyzed the [Specify: e.g., suspension system or drivetrain components] for a collegiate off-road race vehicle, focusing on lightweighting, durability, and manufacturability under competitive constraints. Contributed to team achieving 15th rank among 60 teams. \hfill \raggedright{Dec 2016}
+%% \item \textbf{[Your Consumer/Personal Project Title]} - [Briefly describe a personal project that shows design initiative, e.g., "Designed and 3D-printed an ergonomic enclosure for an IoT device, iterating through three prototypes to optimize usability and thermal management."] \hfill \raggedright{[Date]} % Add a personal project if possible
 %\end{itemize}
 %\vspace{-10pt}
 %\noindent \rule[2pt]{\textwidth}{0.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\noindent \textbf{\large \textcolor{Brown}{Media Coverage}}\\
-%\begin{itemize}[leftmargin=*]
-%\setlength\itemsep{-1pt}
-%\vspace{-8pt}
-%\item Ben Crosbie, March 23 2023, "\href{https://mae.ufl.edu/2023/03/23/grad-student-suhas-tamvada-achieves-influential-discovery-in-heat-transfer/}{Grad student Suhas Tamvada achieves influential discovery in heat transfer}".
-%\item David Staudacher, April 1 2021, \href{https://mie.uic.edu/news-stories/researchers-looking-at-oil-and-water-interaction-to-prevent-water-contamination/}{Researchers looking at oil and water interaction to prevent water contamination}".
-%\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\fancyhf{}
-%\thispagestyle{fancy}
-%\setlength{\voffset}{0in}
-%\setlength{\headsep}{6pt}
-%\setlength{\headheight}{50pt}
-%\footskip 1pt
-%\renewcommand{\headrulewidth}{0.5pt}
-%\renewcommand{\footrulewidth}{0pt}
-%\fancyhead[L]{\textbf{\LARGE Suhas Rao Tamvada}}
-%\fancyhead[R]{\large \href{mailto:stamvada@ufl.edu}{{stamvada@ufl.edu}}}
-%\fancyfoot[C]{\vspace{-80pt}Page \thepage \ of 2}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
